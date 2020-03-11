@@ -1,0 +1,65 @@
+ {% extends 'employee_register/base1.html' %}
+{% load crispy_forms_tags %}
+
+
+ {% block content  %}
+
+ <div class="container">
+          <div class="div.col-md-10.offset-md-1 mt-5">
+              <div style="background:white !important" class="jumbotron">
+                   <div class="text-primary">
+                    <h2 class="display-4"><b>ADD A TECHNICIAN HERE</b></h2>
+
+                    
+                    <hr class="my-4">
+
+                    {% for message in messages %}
+            <div class="alert alert-success {{ message.tags }} alert-dismissible" role="alert" timeout = 500 >
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              {{ message }}
+            </div>
+          {% endfor %}
+
+ {% if messages %}
+ <ul>
+ 	{% for message in messages %}
+ 	   <li>{{ message }}</li>cd 
+ 	{% endfor %}
+ </ul>
+ {% endif %}
+
+ <form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+   {{form.fullname|as_crispy_field}}
+   {{form.mobile|as_crispy_field}}
+
+   <div class="row">
+
+       <div class="col-md-4">
+       {{form.emp_code|as_crispy_field}}
+       </div>
+
+        <div class="col-md-8">
+        {{form.position|as_crispy_field}}
+        </div>
+
+   </div>
+ </div>
+   <div class="row">
+     <div class="col-md-4">
+       <button type="submit" class="btn btn-primary btn-block btn-lg" ><i class="fas fa-database"></i> Submit</button>
+
+     </div>
+     <div class="col-md-4">
+        <a href="{% url 'employee_list' %}" class="btn btn-dark btn-block btn-lg">
+           <i class="fas fa-list-ul"></i>  Employee List
+        </a>
+     </div>
+   </div>
+
+
+</form>
+
+{% endblock content  %}

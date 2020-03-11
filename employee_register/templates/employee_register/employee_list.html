@@ -1,0 +1,61 @@
+{% extends 'employee_register/base1.html' %}
+
+ {% block content  %}
+  <div class="container">
+          <div class="div.col-md-10.offset-md-1 mt-5">
+              <div style="background:white !important" class="jumbotron">
+                   <div class="text-primary">
+                    <h2 class="display-4"><b>LIST OF ALL TECHNICIANS</b></h2>
+                    <hr class="my-4">
+
+                    {% for message in messages %}
+            <div class="alert alert-success {{ message.tags }} alert-dismissible" role="alert" timeout = 500 >
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              {{ message }}
+            </div>
+          {% endfor %}
+
+ <table class="table table-borderless">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Tech Id</th>
+      <th scope="col">Tech. Name</th>
+      <th scope="col">Mobile Number</th>
+      <th scope="col">Position</th>
+      <th>
+        <a href="{% url 'employee_insert' %}" class="btn btn-outline-primary">
+          <i class="fas fa-plus"></i>Add New 
+        </a>
+      </th>
+    </tr>
+  </thead>
+      <tbody>
+           {% for employee in employee_list %}
+           <thead class="thead-dark">
+                <tr>
+                    <td>{{employee.id}}</td>
+                    <td> {{employee.fullname}}</td>
+                    <td> {{employee.mobile}}</td>
+                    <td> {{employee.position}}</td>
+                    <td>
+                      <a href="{% url 'employee_update' employee.id %}" class="btn text-secondary px-0">
+                       <i class="fas fa-edit"></i>
+                     </a>
+                     <form action="{% url 'employee_delete' employee.id %}" method="post" class="d-inline">
+                       {% csrf_token %}
+                       <button type="submit" class="btn">
+                         <i class="far fa-trash-alt fa-lg text-danger float-right"></i>
+                       </button>
+                     </form>
+
+                    </td>
+                </tr>
+              </thead>
+            {% endfor %}
+
+      </tbody>
+ </table>
+
+{% endblock content  %}

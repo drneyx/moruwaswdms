@@ -1,0 +1,50 @@
+{% extends 'employee_register/base1.html' %}
+
+{% block content %}
+<div class="jumbotron"> 
+	<div class="container">
+<table class="table table-borderless">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Tank Type</th>
+      <th scope="col">Status</th>
+      <th scope="col">Problem</th>
+     
+      <th>
+        <a href="{% url 'flow' %}" class="btn btn-outline-primary">
+          <i class="fas fa-plus"></i>Add New Tank
+        </a>
+      </th>
+    </tr>
+  </thead>
+      <tbody>
+          
+           <thead class="thead-dark">
+                <tr>
+                    <td>Tank A</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    
+                    
+       
+                </tr>
+
+     
+              </thead>
+         
+      </tbody>
+
+      
+ </table>
+
+  <div class="col-md-4">
+        <a href="{% url 'employee_insert' %}" class="btn btn-dark btn-block btn-lg">
+           <i class="fas fa-list-ul"></i>  Assgn techician
+        </a>
+</div>
+</div>
+</div>
+				
+
+{% endblock content %}

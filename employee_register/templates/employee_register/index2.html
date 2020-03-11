@@ -1,0 +1,66 @@
+{% extends "employee_register/base1.html" %}
+
+{% load static %}
+
+
+  {% block content %}
+          <!-- Dashboard Counts Section-->
+          <header class="page-header">
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom">Dashboard</h2>
+            </div>
+          </header>
+          <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
+              <div class="row bg-white has-shadow text-violet">
+                <!-- Item -->
+                <div class=" col-lg-8 col 12 ">
+              <center> <h1>WATER DISTRIBUTION MANAGEMENT SYSTEM IN MOROGORO</h1></center>
+            </div>
+              </div>
+            </div>
+          </section>
+          <!-- Dashboard Header Section    -->
+          <section class="dashboard-header">
+            <div class="container-fluid">
+              <div class="row">
+                <!-- Statistics -->
+                <div class="statistics col-lg-3 col-12">
+                  <div class="statistic d-flex align-items-center bg-white has-shadow">
+                    <div class="icon bg-red"><i class="fa fa-tasks"></i></div>
+                    <div class="text"><strong>2234</strong><br><small>Total customers</small></div>
+                  </div>
+                  <div class="statistic d-flex align-items-center bg-white has-shadow">
+                    <div class="icon bg-green"><i class="fa fa-calendar-o"></i></div>
+                    <div class="text"><strong>152</strong><br><small>New connections</small></div>
+                  </div>
+                  <div class="statistic d-flex align-items-center bg-white has-shadow">
+                    <div class="icon bg-orange"><i class="fa fa-paper-plane-o"></i></div>
+                    <div class="text"><strong>147</strong><br><small>Requested connections</small></div>
+                  </div>
+                </div>
+                <!-- Line Chart            -->
+                <div class="chart col-lg-6 col-12">
+
+                  <div class="line-chart bg-white d-flex align-items-center justify-content-center has-shadow">
+
+                    <canvas id="lineCahrt"></canvas>
+                  </div>
+                </div>
+                <div class="chart col-lg-3 col-12">
+                  <!-- Bar Chart   -->
+                  <div class="bar-chart has-shadow bg-white">
+                    <div class="title"><strong class="text-violet">74%</strong><br><small>Current Water service uptime</small></div>
+                    <canvas id="barChartHome"></canvas>
+                  </div>
+                  <!-- Numbers-->
+                  <div class="statistic d-flex align-items-center bg-white has-shadow">
+                    <div class="icon bg-green"><i class="fa fa-line-chart"></i></div>
+                    <div class="text"><strong>75.8%</strong><br><small>Service  Rate</small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Projects Section-->
+  {% endblock content%}
