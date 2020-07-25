@@ -1,0 +1,34 @@
+{% extends 'employee_register/base1.html' %}
+
+ {% block content  %}
+
+
+ <br>
+ <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="card card-body "> 
+                   <p>Are you sure you want to delete "{{employee}}"?</p>
+
+                        <form action= "{%  url 'Tech_delete' employee.id %}" method="post" class="d-inline">
+                        {% csrf_token %}
+
+                        <div class="row">
+                          <div class="col-md-2 mb-3 ">
+
+                       <a class="btn btn-warning" href="{% url 'Tech_list' %}"> Cancel</a>
+                         </div>
+
+                         <div class="col-md-2 mb-3">
+
+                        <input type="submit" class="btn btn-danger" value="Yes, am sure">
+                        </div>
+                       </div>
+                     </form>
+                </div>
+           </div>
+        </div>
+    </div>
+
+
+{% endblock content  %}

@@ -16,18 +16,27 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
+from rest_framework import routers
+from employee_register import views
+
+from django.conf import settings
+from django.conf.urls.static import static
 #from users import views as user_views
+
+router=routers.DefaultRouter()
+#router.register('api',views.SensorDataC,base_name='api')
+router.register('api',views.SensorDataC)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('employee_register.urls')),
-    
-
-
+    path('rt/', include(router.urls))
     #user login and registartion
-
     #path('register/', user_views.register, name='register'),
     #path('login/', auth_views.LoginView.as_view(), name='login'),
     #path('logout/', auth_views.LogoutView.as_view(), name='logout'),
 
 ]
+
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

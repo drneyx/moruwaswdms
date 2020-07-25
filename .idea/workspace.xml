@@ -1,13 +1,327 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba5f714f-af5b-48d1-ba3e-a41f3cb6d42c" name="Default Changelist" comment="" />
+    <list default="true" id="ba5f714f-af5b-48d1-ba3e-a41f3cb6d42c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/employee/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/avatar-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/AZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/BZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/CZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/DE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/DJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/DK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/DM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/DO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/DZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/EC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/EE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/EG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/EH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/ER.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/ES.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/ET.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/EU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/FI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/FJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/FK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/FM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/FO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/FR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/GY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/HK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/HN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/HR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/HT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/HU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/IC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/ID.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/IE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/IL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/IM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/IN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/IQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/IR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/IS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/IT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/JE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/JM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/JO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/JP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/KE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/KG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/KH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/KI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/KM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/KN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/KP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/KR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/KW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/KY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/KZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/LA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/LB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/LC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/LI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/LK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/LR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/LS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/LT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/LU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/LV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/LY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/ME.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/ML.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/MZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/NA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/NC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/NE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/NF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/NG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/NI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/NL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/NO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/NP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/NR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/NU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/NZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/OM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/PA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/PE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/PF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/PG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/PH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/PK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/PL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/PN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/PR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/PS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/PT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/PW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/PY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/QA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/RE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/RO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/RS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/RU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/RW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/ST.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/SZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/TZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/UA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/UG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/US.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/UY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/UZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/VA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/VC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/VE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/VG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/VI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/VN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/VU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/WF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/WS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/YE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/YT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/ZA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/ZM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/ZW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_abkhazia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_basque-country.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_british-antarctic-territory.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_commonwealth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_england.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_gosquared.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_kosovo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_mars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_nagorno-karabakh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_nato.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_northern-cyprus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_olympics.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_red-cross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_scotland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_somaliland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_south-ossetia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_united-nations.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_unknown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/flags/16/_wales.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/map-marker-default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/map-marker-green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/map-marker-pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/map-marker-red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/map-marker-sea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/map-marker-violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/map-marker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/mockup1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/mockup2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/mockup3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/mockup4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/mockup5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/mockup6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/mockup7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/project-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/project-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/project-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/project-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/img/template-mac.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/static/js/charts-home.js" beforeDir="false" afterPath="$PROJECT_DIR$/employee/static/js/charts-home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/employee/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/1base.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/1base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/Tank1.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/Tank1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/Tank2.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/Tank2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/assign.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/assign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/base1.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/base1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/employee_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/employee_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/employee_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/employee_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/flow.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/flow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/templates/employee_register/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/templates/employee_register/tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee_register/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/employee_register/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YyJ5OZGrTMaz2pxErGb0gEUBM3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,7 +329,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tagMak" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -60,6 +374,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="616" y="221" width="424" height="484" key="FileChooserDialogImpl" timestamp="1586877461492">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="616" y="221" width="424" height="484" key="FileChooserDialogImpl/67.27.1533.873@67.27.1533.873" timestamp="1586877461492" />
     <state width="1377" height="205" key="GridCell.Tab.0.bottom" timestamp="1583912464964">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
@@ -80,9 +398,9 @@
       <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state x="322" y="98" key="SettingsEditor/67.27.1533.873@67.27.1533.873" timestamp="1583909335925" />
-    <state x="489" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1583909158282">
+    <state x="489" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1586877088425">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state x="489" y="291" key="com.intellij.ide.util.TipDialog/67.27.1533.873@67.27.1533.873" timestamp="1583909158282" />
+    <state x="489" y="291" key="com.intellij.ide.util.TipDialog/67.27.1533.873@67.27.1533.873" timestamp="1586877088425" />
   </component>
 </project>

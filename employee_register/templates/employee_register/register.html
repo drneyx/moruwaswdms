@@ -1,31 +1,46 @@
 {% extends "employee_register/1base.html" %}
+ {% load crispy_forms_tags %}
 
 {% load static %}
 
 
   {% block content %}
    <!-- Breadcrumb-->
-          <div class="breadcrumb-holder container-fluid">
-            <ul class="breadcrumb">
-              <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
-              <li class="breadcrumb-item active">register</li>
-            </ul>
-          </div>
+         {% for message in messages %}
+            <div class="alert alert-success {{ message.tags }} alert-dismissible" role="alert" timeout = 500 >
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              {{ message }}
+            </div>
+          {% endfor %}
+
+ {% if messages %}
+ <ul>
+  {% for message in messages %}
+     <li>{{ message }}</li>cd 
+  {% endfor %}
+ </ul>
+ {% endif %}
 
   <body>
+    <form class="form-validate" method="POST" action="">
+
+                    {% csrf_token %}
     <div class="page login-page">
       <div class="container d-flex align-items-center">
         <div class="form-holder has-shadow">
           <div class="row">
             <!-- Logo & Information Panel-->
             <div class="col-lg-6">
-              <div class="info d-flex align-items-center">
 
+              <div class="info d-flex align-items-center">
                 <div class="content">
+                
                   <div class="logo">
-                    <h1>Moruwasa Register Dashboard</h1>
+                    <h1>Moruwasa Register Dashboard </h1>
                   </div>
-                  <p>Provide in your credentials to register</p>
+                  <p>Register here as technician</p>
                 </div>
               </div>
             </div>
@@ -33,19 +48,25 @@
             <div class="col-lg-6 bg-white">
               <div class="form d-flex align-items-center">
                 <div class="content">
-                  <form class="form-validate">
-                    <div class="form-group">
-                      <input id="register-username" type="text" name="registerUsername" required data-msg="Please enter your username" class="input-material">
-                      <label for="register-username" class="label-material">User Name</label>
+                  
+                    
+                    
+                      {{form1.username|as_crispy_field}}
+                    
+                  
+                    
+                      {{form1.email|as_crispy_field}}
+                  
+                    
+                      {{form1.password1|as_crispy_field}}
+                   
+                      {{form1.password2|as_crispy_field}}
+
+                       <div class="form-group">
+                      <input id="login-username" type="text" name="username" required data-msg="Please enter your username" class="input-material">
+                      <label for="login-username" class="label-material">Employee code</label>
                     </div>
-                    <div class="form-group">
-                      <input id="register-email" type="email" name="registerEmail" required data-msg="Please enter a valid email address" class="input-material">
-                      <label for="register-email" class="label-material">Email Address      </label>
-                    </div>
-                    <div class="form-group">
-                      <input id="register-password" type="password" name="registerPassword" required data-msg="Please enter your password" class="input-material">
-                      <label for="register-password" class="label-material">password        </label>
-                    </div>
+                  
                     <div class="form-group terms-conditions">
                       <input id="register-agree" name="registerAgree" type="checkbox" required value="1" data-msg="Your agreement is required" class="checkbox-template">
                       <label for="register-agree">Agree the terms and policy</label>
@@ -53,12 +74,16 @@
                     <div class="form-group">
                       <button id="regidter" type="submit" name="registerSubmit" class="btn btn-primary">Register</button>
                     </div>
-                  </form><small>Already have an account? </small><a href="{% url 'login' %}" class="signup">Login</a>
+                  </form>
+                  {{form.errors}}
+
+                  <small>Already have an account? </small><a href="{% url 'logiin' %}" class="signup">Login</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+</div>
+</body>
 {% endblock content %}

@@ -1,0 +1,99 @@
+{% extends "employee_register/base1.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+  {% block content %}
+
+	<div class="container">
+		<div class="text-primary">
+  <style type="text/css">
+  	.profile_picw{
+  		max-width: 200px;
+  		max-height: 200px;
+  		margin: 0 auto;
+  		border-radius: 50%;
+  	}
+  </style>
+
+  <br>
+  <form method="POST" action="" enctype="multipart/form-data">
+    {% csrf_token %}
+  <div class="row">
+  	<div class="col-md-4">
+  		<div class="card card-body">
+  			
+  			<a class="btn btn-warning" href="{% url 'profile' %}"> &#8592; Back to profile </a>
+
+  			<hr>
+  			<img class="profile_picw" src="{{ request.user.employee.profile_pic.url}}">
+  			{{form.profile_pic}}
+  			
+  		</div>
+  		
+  	</div>
+  	<div class="col-md-6">
+  		<div class="card card-body">
+
+                    {% for message in messages %}
+                        <div class="alert alert-success {{ message.tags }} alert-dismissible" role="alert" timeout = 500 >
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                          {{ message }}
+                        </div>
+                      {% endfor %}
+
+                     {% if messages %}
+                     <ul>
+                     	{% for message in messages %}
+                     	   <li>{{ message }}</li>cd 
+                     	{% endfor %}
+                     </ul>
+                     {% endif %}
+
+  			
+  				
+                  <div class="col-md-8">
+                    {{form.fullname|as_crispy_field}}
+                  
+                     </div>
+          				 <div class="col-md-8">
+
+          				{{form2.username|as_crispy_field}}
+          			     </div>
+
+                     <div class="col-md-8">
+
+                  {{form2.email|as_crispy_field}}
+                     </div>
+
+          				 <div class="col-md-8">
+                        {{form.mobile|as_crispy_field}}
+                          </div>
+
+        			     <div class="col-md-8">
+        			    {{form.emp_code|as_crispy_field}}
+        			      </div>
+
+        			    <div class="col-md-8">
+        			    {{form.position|as_crispy_field}}
+        			    </div>
+
+
+				   
+
+  				<input type="submit" class="btn btn-dark" value="Update information">
+  				
+
+  		</div>
+  	</div>
+  </form>
+  	
+  </div>
+</div>
+</div>
+
+
+
+  {% endblock content%}

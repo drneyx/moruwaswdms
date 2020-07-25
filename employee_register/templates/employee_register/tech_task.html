@@ -1,0 +1,94 @@
+{% extends "employee_register/base1.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+  {% block content %}
+
+
+                    {% for message in messages %}
+            <div class="alert alert-success {{ message.tags }} alert-dismissible" role="alert" timeout = 500 >
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              {{ message }}
+            </div>
+          {% endfor %}
+
+<section class="forms"> 
+            <div class="container-fluid">
+              <div class="row">
+                <!-- Basic Form-->
+                <div class="col-lg-12">
+                  <div class="card">
+                    <div class="card-close">
+                      
+                    </div>
+
+                    
+                    <div class="text-info">
+                    <div class="card-header d-flex align-items-center">
+
+                      <div class="display-4 ">
+
+                     <h3 class="h1">Assigned task</h1>
+
+                       <center>
+                       
+                     </center>
+                       </div>
+                       </div>
+                     </div>
+                    <div class="card-body">
+                     
+                      <table class="table table-borderless">
+                        <tr>
+                          
+                          <th><h3><strong>ID</strong></h3></th>
+                           <th><h3><strong>Date assigned</strong></h3></th>
+
+                            <th><h3><strong>Task Description</strong></h3></th>
+
+                             <th><h3><strong>status</strong></h3></th>
+                        </tr>
+
+                        <tbody>
+                   
+                   <tr>
+                    <td>1</td>
+                    <td> 23.03.2020:12:12PM</td>
+                    <td>Main tank does pump water</td>
+                    <td class="badge badge-danger"> Not completed</td>
+            
+                  </tr>
+
+                  <tr>
+                    <td>2</td>
+                    <td> 23.04.2020:12:12PM</td>
+                    <td> switch off burster tank , main tank is working fine</td>
+                    <td class="badge badge-success">  completed</td>
+            
+                  </tr>
+                  <tr>
+
+
+                
+                    </tr>
+                   
+                      </table>
+                        <a style="display: inline-block; float: left;" class="btn btn-dark add-btn" href="{% url 'TechUser1' %}">Current details</a>
+
+
+                    </div>
+                     </div>
+
+                    
+                 
+                </div>
+              </div>
+            </div>
+
+
+          </section>
+
+  {% endblock content%}

@@ -46,6 +46,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'employee_register',
     'crispy_forms',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'djoser',
+    
     
 ]
 
@@ -60,6 +64,17 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+
+SECRET_KEY = "gloubiboulga secret key"
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'
+
+NEXMO_API_KEY = '089e4c13'
+NEXMO_API_SECRET = 'aUgmlikQAhvlH0OF'
+NEXMO_DEFAULT_FROM = 'Vonage APIs'
+
+
+
 
 ROOT_URLCONF = 'employee.urls'
 
@@ -135,8 +150,24 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
+#MEDIA Root
+MEDIA_URL = '/images/'
+
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'static/images')
+
+
+
+#SMTP Configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'cosmasnathan9@gmail.com'
+EMAIL_HOST_PASSWORD = '9719cosmas'
 
 
 

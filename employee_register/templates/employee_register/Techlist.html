@@ -1,0 +1,67 @@
+{% extends 'employee_register/base1.html' %}
+
+ {% block content  %}
+  <div class="container">
+          <div class="div.col-md-10.offset-md-1 mt-5">
+              <div style="background:white !important" class="jumbotron">
+                   <div class="text-primary">
+                    <h2 class="display-4"><b>LIST OF ALL TECHNICIANS</b></h2>
+                    <hr class="my-4">
+
+                    {% for message in messages %}
+            <div class="alert alert-success {{ message.tags }} alert-dismissible" role="alert" timeout = 500 >
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              {{ message }}
+            </div>
+          {% endfor %}
+
+ <table class="table table-borderless">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col"> Id</th>
+      <th scope="col">Full Name</th>
+      <th scope="col">Mobile Number</th>
+      <th scope="col">Email Address</th>
+      <th scope="col">Department</th>
+      <th>
+        <a href="{% url 'employee_insert' %}" class="btn btn-outline-primary">
+          <i class="fas fa-plus"></i>Add New 
+        </a>
+      </th>
+    </tr>
+  </thead>
+      <tbody>
+           {% for employee in employee_list %}
+           <thead class="thead-dark">
+                <tr>
+                    <td>{{employee.id}}</td>
+                    <td> {{employee.fullname}}</td>
+                    <td> {{employee.mobile}}</td>
+                    <td> {{employee.emp_code}}</td>
+                    <td> {{employee.position}}</td>
+                    <td>
+                      <div class="form-row">
+                         <div class="col-md-4 mb-3">
+
+                              <a href="{% url 'employee_update' employee.id %}" class="btn btn-sm btn-primary">
+                               Update
+                             </a>
+                           </div>
+                           <div class="col-md-4 mb-4">
+                          <a href="{% url 'employee_delete' employee.id %}" class="btn btn-sm btn-danger">
+                         Delete
+                       </a>
+                     </div>
+                   </div>
+
+                    </td>
+                </tr>
+              </thead>
+            {% endfor %}
+
+      </tbody>
+ </table>
+
+{% endblock content  %}

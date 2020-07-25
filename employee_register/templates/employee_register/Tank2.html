@@ -1,13 +1,44 @@
-{% extends 'employee_register/base1.html' %}
+ {% extends 'employee_register/base1.html' %}
+ {% load crispy_forms_tags %}
 
 {% block content %}
 
 
-				<div class="alert alert-success" role="alert'">
-					<h2 class="alert-heading">water level for tank B</h2>
-                        <p> <strong>Under construction</strong></p>
-				</div>
-
+		<section class="forms"> 
+            <div class="container-fluid">
+              <div class="row">
+                <!-- Basic Form-->
+                <div class="col-lg-10">
+                  <div class="card">
+                    <div class="card-close">
+                      
+                    </div>
+                    <div class="text-info">
+                    <div class="card-header d-flex align-items-center">
+                      <div class="display-4 ">
+                     <h3 class="h1">Add a new block here</h1>
+                       </div>
+                       </div>
+                          </div>
+                    <div class="card-body">
+                     
+                      <form method="POST" action ="">
+                        <div  class="form-group">
+                        	{% csrf_token%}
+                          {{form.block_name|as_crispy_field}}  
+                          {{form.block_number|as_crispy_field}}
+                          {{form.block_meter_reader|as_crispy_field}}
+                          {{form.block_total_customers|as_crispy_field}}
+                          {{form.block_av_usage|as_crispy_field}}
+                          <input type="submit" value="submit" class="btn btn-info">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 				
 
 {% endblock content %}

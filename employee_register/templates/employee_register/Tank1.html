@@ -1,6 +1,227 @@
 {% extends 'employee_register/base1.html' %}
+{% load static %}
 
 {% block content %}
+<style>
+.wrap{
+  font-family: Roboto;
+  text-align: center;
+}
+.tank{
+  margin:0 50px;
+  display: inline-block;
+}
+body{
+  /*background: #eee;*/
+  margin: 0;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="{% static 'js/waterTank.js' %} "></script>
+<script src="{% static 'js/waterTank.min.js' %} "></script>
+<script>
+$(document).ready(function() {
+  
+  $('.waterTankHere1').waterTank({
+    width: 300,
+    height: 360,
+    color: '#8bd0ec',
+    level: {{least.height}}
+  });
+  
+  $('.waterTankHere2').waterTank({
+    width: 80,
+    height: 360,
+    color: '#f00',
+    level: 80
+  }).on('click', function(event) {
+    $(this).waterTank(Math.floor(Math.random() * 100) + 0 );
+  });
+  
+  $('.waterTankHere3').waterTank({
+    width: 300,
+    height: 360,
+    color: '#2e32ff',
+    level: {{least.rate}}
 
+  });
+
+});
+</script>
+
+
+ <section class="dashboard-header">
+ 	{%  if least %}
+<div class="container-fluid">
+              <div class="row">
+              
+           <div class="col-lg-6">
+                  <div class="pie-chart-example card">
+                    <div class="card-close">
+                      <div class="dropdown">
+                 
+                      </div>
+                    </div>
+                    <div class="card-header d-flex align-items-center">
+                    	<div class="text-primary">
+                    	
+                      <h3 class="h1">Main Tank Water Volume</h1>
+                  </div>
+                    </div>
+                   
+                    <div  class="card-body text-white bg-dark">
+                      
+                        <div class="tank waterTankHere1"></div>
+                        
+                       
+                    </div>
+                  </div>
+                </div>
+
+   
+           <div class="col-lg-6">
+                  <div class="pie-chart-example card">
+                    <div class="card-close">
+                      <div class="dropdown">
+                        
+                      </div>
+                    </div>
+                    <div class="card-header d-flex align-items-center">
+                    	<div class="text-primary">
+
+                      <h3 class="h1">Burster Tank Water Volume</h1>
+                  </div>
+                    </div>
+                    
+                    <div class="card-body text-primary bg-dark ">
+                    	
+                      <div class="tank waterTankHere3"></div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+         </div>
+        {% endif %}
+
+         <div class="container-fluid">
+              <div class="row">
+              
+           <div class="col-lg-6">
+                  <div class="pie-chart-example card">
+                    <div class="card-close">
+                      <div class="dropdown">
+                 
+                      </div>
+                    </div>
+                    <div class="card-header d-flex align-items-center">
+                    	<div class="text-primary">
+                    	<div class="table table-borderless">
+                        
+                     <h3 class="h1">Main Tank Discription</h1>
+                    
+                      </div>
+                      
+                  </div>
+                    </div>
+
+                    <div class="card-body">
+                    	 <table class="table table-borderless">
+  <thead class="thead-white">
+    <tr>
+      <th scope="col">Date& Time</th>
+      <th scope="col">Height</th>
+      <th scope="col">Status</th>
+      <th scope="col">Flow Rate</th>
+      <th scope="col">Volume</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+      <tbody>
+           {% for sensordata in sensor %}
+           <thead class="thead-primary">
+                <tr>
+                    
+                     <td>{{sensordata.date_created}}</td>
+                    <td> {{sensordata.height}}</td>
+                    <td> {{sensordata.status}}</td>
+                    <td> {{sensordata.rate}}</td>
+                    <td> {{sensordata.volume}}</td>
+                    
+                </tr>
+              </thead>
+            {% endfor %}
+
+      </tbody>
+ </table>
+
+                      
+                    </div>
+                  </div>
+                </div>
+                 <div class="col-lg-6">
+                  <div class="pie-chart-example card">
+                    <div class="card-close">
+                      <div class="dropdown">
+                 
+                      </div>
+                    </div>
+                    <div class="card-header  align-items-center">
+                    	<div class="text-primary">
+                    	
+                      <h3 class="h1">Burster Tank Discription</h1>
+                  </div>
+                    </div>
+                    <div class="card-body">
+                    	 <table class="table table-borderless">
+  <thead class="thead-white">
+    <tr>
+      <th scope="col">Dateand time</th>
+      <th scope="col">Height</th>
+      <th scope="col">Status</th>
+      <th scope="col">Flow Rate</th>
+      <th scope="col">Volume</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+      <tbody>
+           {% for sensordata in sensor %}
+           <thead class="thead-primary">
+                <tr>
+                    <td>{{sensordata.date_created}}</td>
+                    <td> {{sensordata.height}}</td>
+                    <td> {{sensordata.status}}</td>
+                    <td> {{sensordata.rate}}</td>
+                    <td> {{sensordata.volume }}</td>
+                    
+                </tr>
+              </thead>
+            {% endfor %}
+
+      </tbody>
+ </table>
+
+</section>
+<div class="container">
+          <div class="div.col-md-10.offset-md-1 mt-5">
+              <div style="background:white !important" class="jumbotron">
+                   <div class="text-primary">
+                    <h2 ><b>Task Allocation</b></h2>
+                    <hr class="my-4">
+
+                    {% for message in messages %}
+            <div class="alert alert-success {{ message.tags }} alert-dismissible" role="alert" timeout = 500 >
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              {{ message }}
+            </div>
+          {% endfor %}
+ <div class="row">
+     <div class="col-md-6">
+      <a href="{% url 'Tech_list' %}" class="btn btn-primary btn-block btn-lg" ><i class="fab fa-artstation"></i> Assign Technician</a>
+
+     </div>
+     
+   </div>
 
 {% endblock content %}

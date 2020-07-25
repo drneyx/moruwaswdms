@@ -5,118 +5,140 @@
 
   {% block content %}
 
-        <div class="content-inner">
-          <!-- Page Header-->
-          <!-- Breadcrumb-->
-          <div class="breadcrumb-holder container-fluid">
-            <ul class="breadcrumb">
-              <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
-              <li class="breadcrumb-item active">list of blocks</li>
-            </ul>
-          </div>
-          <section class="tables">   
+ <section class="dashboard-header">
             <div class="container-fluid">
+              <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-12">
-                  <div class="card">
+              
+           <div class="col-lg-6">
+                  <div class="pie-chart-example card">
                     <div class="card-close">
                       <div class="dropdown">
-                        <button type="button" id="closeCard2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                        <div aria-labelledby="closeCard2" class="dropdown-menu dropdown-menu-right has-shadow"><a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
+                 
                       </div>
                     </div>
                     <div class="card-header d-flex align-items-center">
-                      <h2 class="h4">Here is a list of all blocks in MOROGORO</h2>
+                      <div class="text-primary">
+                      
+                      <h3 class="h1">Water usage Chart Illustration</h1>
+                  </div>
                     </div>
-                    <div class="card-body">
-                      <div class="table-responsive">  
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th>#</th>
-                              <th>Block Name</th>
-                              <th>Block Number</th>
-                              <th>Meter Reader</th>
-                              <th>NO. of Customers</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th scope="row">1</th>
-                              <td>Mafiga</td>
-                              <td>3456</td>
-                              <td>Hassan Musa</td>
-                              <td>230</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2</th>
-                              <td>Tumbaku</td>
-                              <td>3457</td>
-                              <td>Aisha Kingu</td>
-                              <td>87</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">3</th>
-                              <td>Mindu</td>
-                              <td>3458</td>
-                              <td>Godfrey Mlangali</td>
-                              <td>98</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">4</th>
-                              <td>Kilimanjaro</td>
-                              <td>3459</td>
-                              <td>Mboto Julious</td>
-                              <td>200</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">5</th>
-                              <td>Kihonda</td>
-                              <td>3460</td>
-                              <td>JOse Eliya</td>
-                              <td>156</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">6</th>
-                              <td>Azimio</td>
-                              <td>3461</td>
-                              <td>Mboto JUlius</td>
-                              <td>200</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">7</th>
-                              <td>Msimamo</td>
-                              <td>3462</td>
-                              <td>Chondo Fredy</td>
-                              <td>150</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">8</th>
-                              <td>Sanga Sanga</td>
-                              <td>3463</td>
-                              <td>Audax Dafroza</td>
-                              <td>234</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">9</th>
-                              <td>Tulian</td>
-                              <td>3464</td>
-                              <td>Dawnson Liberatha</td>
-                              <td>130</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">10</th>
-                              <td>Moro Town</td>
-                              <td>3465</td>
-                              <td>Alex Mwanganya</td>
-                              <td>500</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                   
+                    <div  class="card-body text-white ">
+                      
+                        <canvas id="barChart1"></canvas>
+                        
+                       
                     </div>
                   </div>
                 </div>
+
+   
+           <div class="col-lg-6">
+                  <div class="pie-chart-example card">
+                    <div class="card-close">
+                      <div class="dropdown">
+                        
+                      </div>
+                    </div>
+                    <div class="card-header d-flex align-items-center">
+                      <div class="text-primary">
+
+                      <h3 class="h1">Chart discription</h1>
+                  </div>
+                    </div>
+                    
+                    <div  class="card-body text-white ">
+                      
+                        <canvas id="barChart1"></canvas>
+                        
+                       
+                    </div>
+                  </div>
+                </div>
+             </div>
+         </div>
+
+
+                <div class="col-lg-12">
+
+          
+                  <div class="card">
+                    <div class="card-close">
+                    </div>
                 
+                    {% for message in messages %}
+            <div class="alert alert-success {{ message.tags }} alert-dismissible" role="alert" timeout = 500 >
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              {{ message }}
+            </div>
+          {% endfor %}
+
+
+           <div class="card-header text-white bg-primary mb-3  align-items-center">
+                      
+                      <center>
+                      <h3 class="h1">Water usage Discription</h1>
+                    </center>
+
+
+                    </div>
+                  
+
+     <div class="card-body">    
+ <table class="table table-borderless">
+  <thead class="thead-darkblue">
+    <tr>
+      <th scope="col">Block Id</th>
+      <th scope="col">Block Name</th>
+      <th scope="col">Block Number</th>
+      <th scope="col">Meter reader</th>
+      <th scope="col">Total Customers</th>
+      <th scope="col">Water Cunsumption in v/l</th>
+      <th>
+        <a href="{% url 'Tank2' %}"  class="btn btn-outline-primary">
+          <i class="fas fa-plus"></i>Add New 
+        </a>
+      </th>
+    </tr>
+  </thead>
+      <tbody>
+           {% for em in tables %}
+           <thead class="thead-dark">
+                <tr>
+                    <td>{{em.id}}</td>
+                    <td> {{em.block_name}}</td>
+                    <td> {{em.block_number}}</td>
+                    <td> {{em.block_meter_reader}}</td>
+                    <td> {{em.block_total_customers}}</td>
+                    <td> {{em.block_av_usage}}</td>
+                    <td>
+          
+                     <form action="" method="post" class="d-inline">
+                       {% csrf_token %}
+                       <a class="btn btn-sm btn-primary" href="{% url 'Tank2_Update' em.id %}">Update</a>
+                      
+                     </form>
+
+                    </td>
+                </tr>
+              </thead>
+            {% endfor %}
+
+      </tbody>
+ </table>
+</div>
+
+</div>
+</div>
+</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>     
                           
    {% endblock content%}

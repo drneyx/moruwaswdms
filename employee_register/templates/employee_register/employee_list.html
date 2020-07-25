@@ -5,7 +5,7 @@
           <div class="div.col-md-10.offset-md-1 mt-5">
               <div style="background:white !important" class="jumbotron">
                    <div class="text-primary">
-                    <h2 class="display-4"><b>LIST OF ALL TECHNICIANS</b></h2>
+                    <h2 class="display-4"><b>Manage Technicians</b></h2>
                     <hr class="my-4">
 
                     {% for message in messages %}
@@ -20,10 +20,11 @@
  <table class="table table-borderless">
   <thead class="thead-dark">
     <tr>
-      <th scope="col">Tech Id</th>
-      <th scope="col">Tech. Name</th>
+      <th scope="col"> Id</th>
+      <th scope="col">Full Name</th>
       <th scope="col">Mobile Number</th>
-      <th scope="col">Position</th>
+      <th scope="col">Employee Code</th>
+      <th scope="col">Department</th>
       <th>
         <a href="{% url 'employee_insert' %}" class="btn btn-outline-primary">
           <i class="fas fa-plus"></i>Add New 
@@ -38,17 +39,22 @@
                     <td>{{employee.id}}</td>
                     <td> {{employee.fullname}}</td>
                     <td> {{employee.mobile}}</td>
+                    <td> {{employee.emp_code}}</td>
                     <td> {{employee.position}}</td>
                     <td>
-                      <a href="{% url 'employee_update' employee.id %}" class="btn text-secondary px-0">
-                       <i class="fas fa-edit"></i>
-                     </a>
-                     <form action="{% url 'employee_delete' employee.id %}" method="post" class="d-inline">
-                       {% csrf_token %}
-                       <button type="submit" class="btn">
-                         <i class="far fa-trash-alt fa-lg text-danger float-right"></i>
-                       </button>
-                     </form>
+                      <div class="form-row">
+                         <div class="col-md-4 mb-4">
+
+                              <a href="{% url 'employee_update' employee.id %}" class="btn btn-sm btn-primary">
+                               Update
+                             </a>
+                           </div>
+                           <div class="col-md-4 mb-4">
+                          <a href="{% url 'employee_delete' employee.id %}" class="btn btn-sm btn-danger">
+                         Delete
+                       </a>
+                     </div>
+                   </div>
 
                     </td>
                 </tr>

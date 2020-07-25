@@ -1,0 +1,52 @@
+{% extends "employee_register/base1.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+  {% block content %}
+
+
+                    {% for message in messages %}
+            <div class="alert alert-success {{ message.tags }} alert-dismissible" role="alert" timeout = 500 >
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              {{ message }}
+            </div>
+          {% endfor %}
+
+<section class="forms"> 
+            <div class="container-fluid">
+              <div class="row">
+                <!-- Basic Form-->
+                <div class="col-lg-10">
+                  <div class="card">
+                    <div class="card-close">
+                      
+                    </div>
+                    <div class="text-info">
+                    <div class="card-header d-flex align-items-center">
+                      <div class="display-4 ">
+                     <h3 class="h1">Upload Current details</h1>
+                       </div>
+                       </div>
+                          </div>
+                    <div class="card-body">
+                     
+                      <form method="POST" action ="">
+                        <div  class="form-group">
+                        	{% csrf_token%}
+                          {{form9.name|as_crispy_field}}  
+                          {{form9.phone|as_crispy_field}}  
+                          {{form9.status|as_crispy_field}}  
+                          <input type="submit" value="submit" class="btn btn-info">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+  {% endblock content%}

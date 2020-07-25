@@ -1,0 +1,274 @@
+
+<div class="container">
+          <div class="div.col-md-10.offset-md-1 mt-5">
+              <div style="background:white !important" class="jumbotron">
+                   <div class="text-primary">
+                    <h2 class="display-"><b>Detailed Tank and water flow informations</b></h2>
+                    <hr class="my-4">
+
+                    {% for message in messages %}
+            <div class="alert alert-success {{ message.tags }} alert-dismissible" role="alert" timeout = 500 >
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              {{ message }}
+            </div>
+          {% endfor %}
+
+ <table class="table table-borderless">
+  <thead class="thead-white">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Height</th>
+      <th scope="col">Status</th>
+      <th scope="col">Flow Rate</th>
+      <th scope="col">Volume</th>
+      <th>
+      	<a href="#">
+          <i class="fas fa-bug"></i>
+        </a>
+      </th>
+    </tr>
+  </thead>
+      <tbody>
+           {% for sensordata in Tank1 %}
+           <thead class="thead-primary">
+                <tr>
+                    <td>{{sensordata.id}}</td>
+                    <td> {{sensordata.height}}</td>
+                    <td> {{sensordata.status}}</td>
+                    <td> {{sensordata.rate}}</td>
+                    <td> {{sensordata.volume}}</td>
+                    
+                </tr>
+              </thead>
+            {% endfor %}
+
+      </tbody>
+ </table>
+
+
+
+
+
+ <footer class="main-footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p>Your company &copy; 2019-2020</p>
+                </div>
+                <div class="col-sm-6 text-right">
+                  <p>Design by <a href="https://bootstrapious.com/p/admin-template" class="external">Nathan@cde</a></p>
+                  <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+                </div>
+              </div>
+            </div>
+          </footer>
+
+
+
+
+
+
+            <div class="breadcrumb-holder container-fluid">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+              <li class="breadcrumb-item active">register</li>
+            </ul>
+          </div>
+
+  <body>
+    <div class="page login-page">
+      <div class="container d-flex align-items-center">
+        <div class="form-holder has-shadow">
+          <div class="row">
+            <!-- Logo & Information Panel-->
+            <div class="col-lg-6">
+              <div class="info d-flex align-items-center">
+
+                <div class="content">
+                  <div class="logo">
+                    <h1>Moruwasa Register Dashboard</h1>
+                  </div>
+                  <p>Provide in your credentials to register</p>
+                </div>
+              </div>
+            </div>
+            <!-- Form Panel    -->
+            <div class="col-lg-6 bg-white">
+              <div class="form d-flex align-items-center">
+                <div class="content">
+                  <form class="form-validate" method="POST" action="">
+
+                    {% csrf_token %}
+                    <div class="form-group">
+                      <input  id="register-username" type="text" name="registerUsername" required data-msg="Please enter your username" class="input-material">{{form.username}}
+                      <label for="register-username" class="label-material">User Name</label>
+                    </div>
+                    <div class="form-group">
+                      <input id="register-email" type="email" name="registerEmail" required data-msg="Please enter a valid email address" class="input-material">
+                      <label for="register-email" class="label-material">Email Address      </label>
+                    </div>
+                    <div class="form-group">
+                      <input id="register-password" type="password" name="registerPassword" required data-msg="Please enter your password" class="input-material">
+                      <label for="register-password" class="label-material">password        </label>
+                    </div>
+                    <div class="form-group terms-conditions">
+                      <input id="register-agree" name="registerAgree" type="checkbox" required value="1" data-msg="Your agreement is required" class="checkbox-template">
+                      <label for="register-agree">Agree the terms and policy</label>
+                    </div>
+                    <div class="form-group">
+                      <button id="regidter" type="submit" name="registerSubmit" class="btn btn-primary">Register</button>
+                    </div>
+                  </form><small>Already have an account? </small><a href="{% url 'logiin' %}" class="signup">Login</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+                          {{form.block_name|as_crispy_field}}  
+                          {{form.block_number|as_crispy_field}}
+                          {{form.block_meter_reader|as_crispy_field}}
+                          {{form.block_total_customers|as_crispy_field}}
+                          {{form.block_av_usage|as_crispy_field}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          <i class="fas fa-users-cog"></i>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                           <section class="tables">   
+            <div class="container">
+
+              {% if total_blocks%}
+  <div class="row">
+    <div class="col">
+     <div class="card  mb-3" style="max-width: 18rem;">
+  <div class="card-header text-white bg-primary">
+      <h3 class="h1">Total Blocks</h1>
+  </div>
+  <div class="card-body">
+    <div class="display-4">
+     <div class="text-warning text-center">
+      <h1 class="display-2">{{total_blocks}}</h1>
+
+      </div>
+
+       
+      
+    </div>
+    
+    
+  </div>
+</div>
+  {% endif %}
+
+  {% if total_customers %}
+    </div>
+    <div class="col">
+      <div class="col-md">
+     <div class="card  mb-3" style="max-width: 18rem;">
+  <div class="card-header text-white bg-primary">
+     <h3 class="h1">Total Customers</h1>
+  </div>
+  <div class="card-body">
+     <div class="display-4">
+     <div class="text-info">
+    <h1 >{{total_customers}}</h1>
+  </div>
+</div>
+  </div>
+</div>
+    </div>
+      </div>
+      {% endif %}
+
+    {% if total %}
+    <div class="col">
+      <div class="col-md">
+         <div class="card  mb-3" style="max-width: 18rem;">
+  <div class="card-header text-white bg-primary">
+     <h1 class="h1">Total Volume </h1>
+  </div>
+  <div class="card-body">
+    
+     <h1 class="display-6">{{total}}</h1>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+<span class="heading">Main</span>
+          <ul class="list-unstyled"><div class="content-inner">
+            <li ><a href="{% url 'index2' %}"> <i class="icon-home"></i>Home </a></li>
+
+            {% if request.user.is_staff %}
+            <li><a href="{% url 'Tank1' %}"><i class="far fa-star"></i>Tank Opearation</a></li>
+            <li><a href="{% url 'employee_list' %}"><i class="fas fa-users"></i>Manage Technicians</a></li>
+            <li><a href="{% url 'tables' %}"> <i class="fas fa-list"></i>List of Blocks</a></li>
+
+
+            {% else %}
+            <li><a href="{% url 'profile' %}"><i class="fas fa-user-md"></i>Profile</a></li>
+            <li><a href="{% url 'account_setting' %}"> <i class="fas fa-cog"></i>Settings</a></li>
+
+
+            {% endif %}
+            
+            <li class="nav-item"><a href="{% url 'logoutUser' %}" class="nav-link logout"> <span class="d-none d-sm-inline"></span><i class="fa fa-sign-out"></i> Logout </a></li>
+          </ul><span class="heading">Extras</span>

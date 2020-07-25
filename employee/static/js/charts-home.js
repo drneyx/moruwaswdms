@@ -153,7 +153,7 @@ $(document).ready(function () {
     // ------------------------------------------------------- //
     // Pie Chart
     // ------------------------------------------------------ //
-    var PIECHART = $('#pieChart');
+    var PIECHART = $('#pieChart1');
     var myPieChart = new Chart(PIECHART, {
         type: 'doughnut',
         options: {
@@ -252,3 +252,247 @@ $(document).ready(function () {
     });
 
 });
+ var PIECHARTEXMPLE    = $('#pieChartExample');
+    var pieChartExample = new Chart(PIECHARTEXMPLE, {
+        type: 'pie',
+        data: {
+            labels: [
+                "volume",
+
+            ],
+            datasets: [
+                {
+                    data: [300, 0],
+                    borderWidth: 0,
+                    backgroundColor: [
+                        '#44b2d7',
+                        "#59c2e6",
+                        "#71d1f2",
+                        "#96e5ff"
+                    ],
+                    hoverBackgroundColor: [
+                        '#44b2d7',
+                        "#59c2e6",
+                        "#71d1f2",
+                        "#96e5ff"
+                    ]
+                }]
+            }
+    });
+
+    var pieChartExample = {
+        responsive: true
+    };
+
+ // ------------------------------------------------------ //
+    var BARCHART1 = $('#barChart1');
+    var dataa = '{{least.height}}'
+    var barChartHome = new Chart(BARCHART1, {
+        type: 'bar',
+        options:
+        {
+            scales:
+            {
+                xAxes: [{
+                    display: true
+                }],
+                yAxes: [{
+                    display: true
+                }],
+            },
+            legend: {
+                display: false
+            }
+        },
+        data: {
+            labels: ["kisanga", "kihonda", "Town", "Mazingu", "mindu", "sabasaba"],
+            datasets: [
+                {
+                    label: "Data Set 1",
+                    backgroundColor: [
+                        '#44b2d7',
+                        '#44b2d7',
+                        '#44b2d7',
+                        '#44b2d7',
+                        '#44b2d7',
+                        '#44b2d7',
+                        '#44b2d7',
+                        '#44b2d7'
+                    ],
+                    borderColor: [
+                        '#44b2d7',
+                        '#44b2d7',
+                        '#44b2d7',
+                        '#44b2d7',
+                        '#44b2d7',
+                        '#44b2d7',
+                        '#44b2d7',
+                        '#44b2d7'
+                    ],
+                    borderWidth: 0,
+                    data: [21, 22, 6, 77, 34, 25, 45]
+                },
+                
+            ]
+        }
+    });
+
+
+
+ var BARCHART2 = $('#barChart2');
+    var barChartHome = new Chart(BARCHART2, {
+        type: 'bar',
+        options:
+        {
+            scales:
+            {
+                xAxes: [{
+                    display: true
+                }],
+                yAxes: [{
+                    display: true
+                }],
+            },
+            legend: {
+                display: false
+            }
+        },
+        data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+                {
+    
+                    backgroundColor: [
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d'
+                    ],
+                    borderColor: [
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d',
+                        '#54e69d'
+                    ],
+                    borderWidth: 1,
+                    data: [65, 59, 80, 81, 56, 55, 40]
+                }
+            ]
+        }
+    });
+
+
+
+ var BARCHARTEXMPLE    = $('#barChartExample');
+    var barChartExample = new Chart(BARCHARTEXMPLE, {
+        type: 'bar',
+        options: {
+            scales: {
+                xAxes: [{
+                    display: true,
+                    gridLines: {
+                        color: '#eee'
+                    }
+                }],
+                yAxes: [{
+                    display: true,
+                    gridLines: {
+                        color: '#eee'
+                    }
+                }]
+            },
+        },
+        data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+                {
+                    label: "Data Set 1",
+                    backgroundColor: [
+                        gradient1,
+                        gradient1,
+                        gradient1,
+                        gradient1,
+                        gradient1,
+                        gradient1,
+                        gradient1
+                    ],
+                    hoverBackgroundColor: [
+                        gradient1,
+                        gradient1,
+                        gradient1,
+                        gradient1,
+                        gradient1,
+                        gradient1,
+                        gradient1
+                    ],
+                    borderColor: [
+                        gradient1,
+                        gradient1,
+                        gradient1,
+                        gradient1,
+                        gradient1,
+                        gradient1,
+                        gradient1
+                    ],
+                    borderWidth: 1,
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                },
+                {
+                    label: "Data Set 2",
+                    backgroundColor: [
+                        gradient2,
+                        gradient2,
+                        gradient2,
+                        gradient2,
+                        gradient2,
+                        gradient2,
+                        gradient2
+                    ],
+                    hoverBackgroundColor: [
+                        gradient2,
+                        gradient2,
+                        gradient2,
+                        gradient2,
+                        gradient2,
+                        gradient2,
+                        gradient2
+                    ],
+                    borderColor: [
+                        gradient2,
+                        gradient2,
+                        gradient2,
+                        gradient2,
+                        gradient2,
+                        gradient2,
+                        gradient2
+                    ],
+                    borderWidth: 1,
+                    data: [35, 40, 60, 47, 88, 27, 30],
+                }
+            ]
+        }
+    });
+
+ 

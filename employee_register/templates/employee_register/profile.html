@@ -1,0 +1,81 @@
+{% extends "employee_register/base1.html" %}
+
+{% load static %}
+
+
+  {% block content %}
+
+<div class="container">
+          <div class="div.col-md-10.offset-md-1 mt-5">
+              <div style="background:white !important" class="jumbotron">
+                   <div class="text-primary">
+                    <h2 class="display-4"><b>Profile Details</b></h2>
+                    <hr class="my-4">
+
+                    {% for message in messages %}
+            <div class="alert alert-success {{ message.tags }} alert-dismissible" role="alert" timeout = 500 >
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              {{ message }}
+            </div>
+          {% endfor %}
+
+ <table class="table table-borderless">
+  
+  {% if user.is_authenticated %}
+      <tbody>
+           <thead class="thead-dark">
+                   <tr>
+                    <td class="font-weight-bold">Full name</td>
+                    <td> {{user.employee.fullname}}</td>
+                    </tr>
+                <tr>
+                  <b>
+                  <td class="font-weight-bold"> Username </td>
+                </b>
+                    <td>{{user.username}}</td>
+                  </tr>
+                  <tr>
+                    <td class="font-weight-bold">Email Address</td>
+                    <td> {{user.email}}</td>
+                    </tr>
+                    <tr>
+                       <tr>
+                    <td class="font-weight-bold">Phone NUmber</td>
+                    <td> {{user.employee.mobile}}</td>
+                    </tr>
+                     <tr>
+                    <td class="font-weight-bold">Department</td>
+                    <td> {{user.employee.position}}</td>
+                    </tr>
+                     <tr>
+                    <td class="font-weight-bold">Employee Code</td>
+                    <td> {{user.employee.emp_code}}</td>
+                    </tr>
+
+
+                      <td></td>
+                    
+                    <td class="center">
+                      <div class="form-row">
+                         <div class="col-md-6 ">
+
+                      <a href="{% url 'account_setting' %}" class="btn btn-sm btn-warning">
+                       Update
+                     </a>
+
+
+                   </div>
+                  
+                   </div>
+
+                    </td>
+                </tr>
+              </thead>
+           
+
+      </tbody>
+      {% endif %}
+ </table>
+  {% endblock content%}
